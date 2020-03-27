@@ -1,101 +1,81 @@
-.container-group {
-  background-color: #111111;
-  padding: 0 50px;
-  display: flex;
-  color: white;
+.wrapper{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
+.header{
+    display: grid;
+    grid-template-columns: 20% 40% 10% 30%;
 }
 
-.input-content {
-  margin: 0 20px;
-  padding: 5px 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-.picker-group {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-grow: 1;
-}
-.picker {
-  text-transform: uppercase;
-  padding: 0 10px;
-}
-
-.picker:hover {
-  cursor: pointer;
-  background-color: black;
-  color: blueviolet;
-}
-
-.sign-out {
-  text-transform: uppercase;
-  margin: 20px 0px;
-
-  /* width: 100%; */
+.logo{
+    background-image: url('https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/logo-mp-3.svg');
+    background-size: contain;
+    height: 30px;
+    background-repeat: no-repeat;
 }
 
 .search {
-  background-color: white;
-  color: #111;
-  font-size: 25px !important;
-  border-left-width: 0px;
-  border: 1px solid #999;
-  border-left-style: none;
-}
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
 
-#input1 {
-  border-right-width: 0px;
-  border: 1px solid #999;
-  border-right-style: none;
-  font-size: 20px;
-}
+  .searchTerm {
+    width: 100%;
+    border: 1px solid #999;
+    border-left: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 0px 5px 5px 0px;
+    outline: none;
+    color: #9DBFAF;
+  }
 
-.menu-bar {
-  list-style: none;
-  display: flex;
-  background-color: #999;
-}
+  .searchTerm:focus{
+    color: #111; 
+  } 
+  
+  .searchButton {
+    width: 40px;
+    height: 32px;
+    border: 1px solid #999;
+    border-right: none;
+    background-color: transparent;
+    text-align: center;
+    color: #111;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .dot {
+    height: 28px;
+    width: 28px;
+    background-image: url('https://picsum.photos/200/300');
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+  }
 
-li {
-  margin: 0 10px;
-}
+  .avatar{
+    display: flex;
+  }
 
-a {
-  text-decoration: none;
-}
+  .user{
+    display: flex;
+    justify-content: space-around;
+  }
 
-.submenu {
-  list-style: none;
-  position: relative;
-  display: none;
-  margin-bottom: 10px;
-}
+  .name{
+    font-weight: bold;
+    font-size: 15 !important;
+  }
 
-.sub-content {
-  margin: 0;
-}
-.menu-content:hover .submenu {
-  display: block;
-}
+  .account {
+    color: #999;
+    font-size: 12 !important;
+  }
 
-.menu-content:hover {
-  color: purple;
-}
-.submenu-container {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  background-color: #999;
-  l;
-}
+  
