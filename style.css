@@ -1,80 +1,102 @@
-.wrapper{
-    font-family: 'Open Sans', sans-serif ;
-    margin-top: 10px;
+.wrapper {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
 }
 
-.user-info{
+.user-info {
   display: flex;
-  text-align: center;
+  justify-content: space-evenly;
+  /* text-align: center; */
 }
 
-.logo{
-    background-image: url('https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/logo-mp-3.svg');
-    background-size: contain;
-    height: 30px;
-    background-repeat: no-repeat;
+.logo {
+  background-image: url("https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/logo-mp-3.svg");
+  background-size: contain;
+  height: 30px;
+  background-repeat: no-repeat;
 }
 
-.search {
-    width: 100%;
-    position: relative;
-    display: flex;
-  }
+.user-profile {
+  font-size: 13px;
+}
 
-  .searchTerm {
-    width: 100%;
-    border: 1px solid #999;
-    border-left: none;
-    padding: 5px;
-    height: 20px;
-    border-radius: 0px 5px 5px 0px;
-    outline: none;
-    color: #9DBFAF;
-  }
+.user-profile .name {
+  font-size: 14px;
+  font-weight: bold;
+}
 
-  .searchTerm:focus{
-    color: #111; 
-  } 
-  
-  .searchButton {
-    width: 40px;
-    height: 32px;
-    border: 1px solid #999;
-    border-right: none;
-    background-color: transparent;
-    text-align: center;
-    color: #111;
-    border-radius: 5px 0 0 5px;
-    cursor: pointer;
-    font-size: 20px;
-  }
-  
-  .dot {
-    height: 35px;
-    width: 35px;
-    background-image: url('https://picsum.photos/200/300');
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 10px;
-  }
+.user-profile .account {
+  font-size: 13px;
+  color: #999;
+}
 
-  .avatar{
-    display: flex;
-  }
+.dropdown-icon:focus {
+  transform: rotate(90deg);
+}
 
-  .user{
-    display: flex;
-    justify-content: space-around;
-  }
+.navbar-content {
+  font-size: 14px !important;
+  text-transform: uppercase;
+}
+.dot {
+  /* margin-top: 10px; */
+  height: 35px;
+  width: 35px;
+  background-image: url("https://picsum.photos/200/300");
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
 
-  .name{
-    font-weight: bold;
-    font-size: 15 !important;
-  }
+.VIP {
+  padding: 0 10px;
+  background: rgb(237, 230, 7);
+  background: linear-gradient(
+    70deg,
+    rgba(237, 230, 7, 1) 0%,
+    rgba(255, 153, 0, 1) 11%
+  );
+  border-radius: 15px;
+}
 
-  .account {
-    color: #999;
-    font-size: 12 !important;
-  }
+#image {
+  width: 100% !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  margin-bottom: 10px;
+  /* display: block; */
+}
 
-  
+.title{
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+.album{
+  display: flex !important;
+}
+
+.album-square{
+  width: 190px;
+  height: 190px;
+  background-image: url('https://picsum.photos/320/240');
+  background-size: cover;
+  background-position: center;
+  font-size: 40px;
+  /* margin: auto; */
+}
+
+.album-square .overlay{
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.album{
+  display: flex;
+  justify-content: space-evenly;
+}
